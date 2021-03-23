@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+.tooltip{
+    position:relative;
+    display: inline;
+    border-bottom: 1px solid red;
+
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: blue;
+    color: brown;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 4px;
+
+    position: absolute;
+    top: 150%;
+    left:50%;
+    margin-left: -60px;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+.tooltip .tooltiptext::after{
+    content: "";
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+}
+</style>
+</head>
+<body>
+<div>thinknext</div>
+<div class="tooltip">tooltip
+<div class="tooltiptext">tooltiptext</div>
+</div>
+</body>
+</html>

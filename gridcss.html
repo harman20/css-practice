@@ -1,0 +1,32 @@
+<html>
+<style>
+.g-container{
+    display: grid;
+    background-color: coral;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+    grid-column-gap:50px;
+    grid-row-gap:50px;
+    grid-gap:70px;
+}
+
+.g-container >div{
+    background-color: chartreuse;
+    border: 1px solid green;
+    font-size: 30px;
+    text-align: center;
+}
+.g-item1{
+    grid-row-start:1;
+    grid-row-end:4;
+}
+</style>
+<body>
+<div class="g-container">
+
+<div class="g-item">one</div>
+<div class="g-item">two</div>
+<div class="g-item">three</div>
+<div class="g-item">four</div>
+</div>
+</html>
