@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+#m{
+    display:flex;
+    flex:2;
+}
+#m > article{
+    flex:1;
+    order:1;
+}
+#m > nav, #m > aside{
+    flex:0 0 20vw;
+}
+#m > nav{
+    background-color:lawngreen;
+    order:3;
+}
+#m > aside{
+    background-color: lightcoral;
+    order: 2;
+}
+header, footer{
+    background-color: lightseagreen;
+    height: 20vh;
+}
+header,footer,article,nav,aside{
+    padding: 1em;
+}
+
+</style>
+</head>
+<body>
+<header>Header</header>
+<div id="m">
+<article>content</article>
+<nav>Nav</nav>
+<aside>aside</aside>
+</div>
+<footer>footer</footer>
+</body>
+</html>
