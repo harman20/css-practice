@@ -13,7 +13,7 @@ TOPICS COVERED
 **selector:pseudo-class{property:value;}**
 
 eg-
- **div:hover{background-color:red;} **
+ **div:hover{background-color:red;}**
  
 **DIFFERENT PSEUDO CLASSES INCLUDE- :HOVER,:LINK,:VISITED,:ACTIVE,:FOCUS,:CHECKED:FIRST-CHILD,NTH-CHILD,FIRST-OF-TYPE**
 
