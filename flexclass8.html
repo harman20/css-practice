@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+#m1{
+    display: flex;
+    min-height: 50vh;
+}
+#m1 > article{
+    flex:1;
+}
+#m1> nav, #m >aside{
+    flex:0 0 20vw;
+    background-color: hotpink;
+}
+#m > nav{
+order: -1;
+}
+header, footer,article,nav,aside{
+    padding: 1em;
+}
+header,footer{
+    background-color: green;
+    height: 20vh;
+}
+</style>
+</head>
+<header>Header</header>
+<div id="m1">
+<nav>Nav</nav>
+<article>article</article>
+
+<aside>aside</aside>
+</div>
+<footer>Footer</footer>

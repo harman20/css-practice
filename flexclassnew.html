@@ -1,0 +1,30 @@
+<style>
+body{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+body>*
+{
+    background-color: burlywood;
+    padding: 2rem;
+    text-align:center;
+    border: 5px solid red;
+}
+.header, .footer{
+    flex: 1 100%;
+}
+.sidebar{
+    flex-shrink: 3;
+    order:2;
+}
+.main{
+    flex: 6;
+    order:1;
+}
+</style>
+
+<header class="header">Header</header>
+<main class="main">Main</main>
+<aside class="sidebar">Sidebar</aside>
+<footer class="footer">Footer</footer>
